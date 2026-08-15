@@ -91,9 +91,9 @@
                         Y porque, como consultora, agencia o profesional con una red activa, <strong>tú también puedes ofrecer más valor a tus clientes y diferenciarte</strong>.
                     </p>
                 </div>
-                <div class="bg-seviRed text-white p-10 rounded-2xl shadow-xl text-center flex flex-col justify-center items-center h-full">
-                    <h3 class="text-3xl font-bold mb-2">SeviAI</h3>
-                    <p class="text-xl">asesoría y formación</p>
+                <!-- Aquí incluimos el logo de SeviAI tal y como pediste -->
+                <div class="p-10 text-center flex flex-col justify-center items-center h-full">
+                    <img src="assets/images/SeviAI-asesoría y formación_horizontal_sin_fondo.png" alt="Logo SeviAI" class="max-w-full h-auto drop-shadow-xl">
                 </div>
             </div>
             
@@ -195,16 +195,19 @@
         </div>
     </section>
 
-    <!-- 7. Cómo trabajamos -->
-    <section class="py-20 px-6 md:px-12 bg-seviDark text-white">
-        <div class="max-w-5xl mx-auto">
+    <!-- 7. Cómo trabajamos (con fondo Loop) -->
+    <section class="py-20 px-6 md:px-12 text-white relative bg-seviDark" style="background-image: url('assets/images/Loop.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <!-- Capa de superposición para que el texto sea legible -->
+        <div class="absolute inset-0 bg-black/70"></div>
+        
+        <div class="max-w-5xl mx-auto relative z-10">
             <h2 class="text-3xl font-bold text-seviRed mb-12 text-center">CÓMO TRABAJAMOS</h2>
             
             <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-seviRed before:to-transparent">
                 
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-seviDark bg-seviRed text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">01</div>
-                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-gray-700 bg-gray-800">
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-gray-700 bg-black/60 backdrop-blur-sm">
                         <h3 class="font-bold text-xl mb-2 text-white">HABLAMOS Y DETECTAMOS SINERGIAS</h3>
                         <p class="text-gray-300">No buscamos colaboraciones masivas, sino relaciones que tengan sentido y encaje real.</p>
                     </div>
@@ -212,7 +215,7 @@
                 
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-seviDark bg-seviRed text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">02</div>
-                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-gray-700 bg-gray-800">
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-gray-700 bg-black/60 backdrop-blur-sm">
                         <h3 class="font-bold text-xl mb-2 text-white">DEFINIMOS QUÉ APORTA CADA PARTE</h3>
                         <p class="text-gray-300">Tú decides si derivar clientes, crear formaciones conjuntas o integrar tu servicio dentro de un proyecto IA.</p>
                     </div>
@@ -220,7 +223,7 @@
 
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-seviDark bg-seviRed text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">03</div>
-                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-gray-700 bg-gray-800">
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-gray-700 bg-black/60 backdrop-blur-sm">
                         <h3 class="font-bold text-xl mb-2 text-white">FORMALIZAMOS LA COLABORACIÓN</h3>
                         <p class="text-gray-300">Incluimos tu marca en nuestro ecosistema de partners y establecemos beneficios y protocolos claros.</p>
                     </div>
@@ -228,7 +231,7 @@
 
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-seviDark bg-seviRed text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">04</div>
-                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-gray-700 bg-gray-800">
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-gray-700 bg-black/60 backdrop-blur-sm">
                         <h3 class="font-bold text-xl mb-2 text-white">CREAMOS JUNTOS IMPACTO REAL</h3>
                         <p class="text-gray-300">Colaboramos en acciones concretas: charlas, eventos, formaciones o implantaciones de IA seguras y humanas.</p>
                     </div>
@@ -247,7 +250,8 @@
                 <!-- FORLOPD -->
                 <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col">
                     <div class="h-20 mb-6 flex items-center justify-start">
-                        <img src="assets/images/Copia-de-logo-con-fondo.jpg" alt="FORLOPD" class="max-h-full object-contain">
+                        <!-- Corregido el logo de ForLOPD según indicaciones -->
+                        <img src="assets/images/descarga.png" alt="FORLOPD" class="max-h-full object-contain">
                     </div>
                     <h3 class="text-xl font-bold text-seviDark mb-3">FORLOPD</h3>
                     <p class="text-gray-600 mb-4 flex-grow">Firma experta en protección de datos y cumplimiento normativo digital. Colaboran con SeviAI asegurando que todas las soluciones de inteligencia artificial se despliegan cumpliendo RGPD.</p>
@@ -267,8 +271,8 @@
                 <!-- HELVETIA -->
                 <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col">
                     <div class="h-20 mb-6 flex items-center justify-start">
-                        <!-- Placeholder until real logo is downloaded -->
-                        <div class="text-3xl text-seviRed font-bold flex items-center gap-2"><i class="fa-solid fa-shield-halved"></i> Helvetia</div>
+                        <!-- Corregido el logo de Helvetia -->
+                        <img src="assets/images/helvetia-logo.png" alt="Helvetia" class="max-h-full object-contain">
                     </div>
                     <h3 class="text-xl font-bold text-seviDark mb-3">HELVETIA-SEGUROS DE CIBERRIESGO</h3>
                     <p class="text-gray-600 mb-4 flex-grow">Aseguradora líder que protege a empresas frente a ataques informáticos. Ofreciendo coberturas especializadas adaptadas a PYMEs que comienzan a usar IA.</p>
@@ -278,7 +282,8 @@
                 <!-- NEOTYPE -->
                 <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col">
                     <div class="h-20 mb-6 flex items-center justify-start">
-                        <div class="text-3xl text-seviDark font-bold flex items-center gap-2">NEOTYPE</div>
+                        <!-- Corregido el logo de Neotype -->
+                        <img src="assets/images/Copia-de-logo-con-fondo.jpg" alt="Neotype" class="max-h-full object-contain">
                     </div>
                     <h3 class="text-xl font-bold text-seviDark mb-3">NEOTYPE</h3>
                     <p class="text-gray-600 mb-4 flex-grow">Partner tecnológico especializado en automatización de contenidos y posicionamiento SEO con IA. Optimizamos webs integrando IA de forma responsable.</p>
@@ -376,10 +381,10 @@
 
     <!-- 12. Contacto y Typeform -->
     <section id="contacto-form" class="py-20 px-6 md:px-12 bg-white">
-        <div class="max-w-5xl mx-auto">
+        <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-bold text-seviRed mb-12 text-center">¿CREAMOS ALGO JUNTOS?</h2>
             
-            <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
                 
                 <!-- Info Contacto -->
                 <div>
@@ -387,30 +392,38 @@
                         Si crees que podemos generar sinergias, tomemos un café o una videollamada. Las mejores colaboraciones nacen conversando.
                     </p>
                     
-                    <div class="space-y-4 mb-8">
+                    <div class="space-y-6 mb-8">
                         <div class="flex items-center gap-4 text-gray-700">
-                            <div class="w-10 h-10 bg-seviLight rounded-full flex items-center justify-center text-seviRed"><i class="fa-solid fa-envelope"></i></div>
-                            <strong>Email:</strong> rocio@seviai.es
+                            <div class="w-12 h-12 bg-seviLight rounded-full flex items-center justify-center text-seviRed text-xl"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-bold uppercase">Email</p>
+                                <a href="mailto:rocio@seviai.es" class="text-lg font-medium hover:text-seviRed transition-colors">rocio@seviai.es</a>
+                            </div>
                         </div>
                         <div class="flex items-center gap-4 text-gray-700">
-                            <div class="w-10 h-10 bg-seviLight rounded-full flex items-center justify-center text-seviRed"><i class="fa-brands fa-whatsapp"></i></div>
-                            <strong>Teléfono / WhatsApp:</strong> +34 640 31 60 34
+                            <div class="w-12 h-12 bg-seviLight rounded-full flex items-center justify-center text-seviRed text-xl"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-bold uppercase">Teléfono / WhatsApp</p>
+                                <a href="https://wa.me/34640316034" target="_blank" class="text-lg font-medium hover:text-seviRed transition-colors">+34 640 31 60 34</a>
+                            </div>
                         </div>
                         <div class="flex items-center gap-4 text-gray-700">
-                            <div class="w-10 h-10 bg-seviLight rounded-full flex items-center justify-center text-seviRed"><i class="fa-brands fa-linkedin-in"></i></div>
-                            <strong>LinkedIn:</strong> Rocío Cano Fernández-Piedra
+                            <div class="w-12 h-12 bg-seviLight rounded-full flex items-center justify-center text-seviRed text-xl"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-bold uppercase">LinkedIn</p>
+                                <a href="https://www.linkedin.com/in/rocio-cano-fernandez-piedra/" target="_blank" class="text-lg font-medium hover:text-seviRed transition-colors">Rocío Cano Fernández-Piedra</a>
+                            </div>
                         </div>
                     </div>
                     
-                    <p class="text-lg font-medium text-seviDark italic">
-                        Porque la tecnología puede transformar negocios… pero las personas son las que transforman el mundo.
+                    <p class="text-xl font-medium text-seviDark italic border-l-4 border-seviRed pl-4">
+                        "Porque la tecnología puede transformar negocios… pero las personas son las que transforman el mundo."
                     </p>
                 </div>
 
-                <!-- Typeform -->
-                <div class="bg-white p-2 rounded-2xl shadow-xl border border-gray-100 overflow-hidden h-[600px]">
-                    <div data-tf-live="IkU51Q3T"></div>
-                    <script src="//embed.typeform.com/next/embed.js"></script>
+                <!-- Typeform embebido vía iframe para garantizar su carga en todas partes -->
+                <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden h-[600px] w-full">
+                    <iframe src="https://form.typeform.com/to/IkU51Q3T" width="100%" height="100%" frameborder="0" allow="camera; microphone; autoplay; encrypted-media;" style="border:none;"></iframe>
                 </div>
                 
             </div>
