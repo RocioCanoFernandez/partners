@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red de Colaboración y Confianza - SeviAI</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        seviRed: '#B1182B',
+                        seviDark: '#1a1a1a',
+                        seviLight: '#f9f9f9',
+                        seviGray: '#f3f4f6'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        .logo-hover { transition: all 0.3s ease; filter: grayscale(100%); opacity: 0.7; }
+        .logo-hover:hover { filter: grayscale(0%); opacity: 1; transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased leading-relaxed">
+
+    <!-- 1. Hero Section -->
+    <section class="relative bg-seviLight pt-24 pb-20 px-6 md:px-12 text-center overflow-hidden">
+        <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#B1182B 1px, transparent 1px); background-size: 30px 30px;"></div>
+        
+        <div class="relative max-w-4xl mx-auto z-10">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-seviDark mb-6 leading-tight">
+                RED DE COLABORACIÓN Y <br><span class="text-seviRed">CONFIANZA</span>
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-4">PARTNERS Y COLABORADORES SEVIAI</h2>
+            
+            <div class="mt-8 mb-10">
+                <p class="text-xl font-bold text-seviDark">ROCÍO CANO FERNÁNDEZ-PIEDRA</p>
+                <p class="text-lg text-gray-600 mt-2">Consultora y Formadora en Inteligencia Artificial aplicada a PYMEs · Fundadora de SeviAI</p>
+                <p class="text-md text-seviRed font-medium italic mt-2">Especialista en transformación digital con rostro humano.</p>
+            </div>
+            
+            <a href="#contacto-form" class="inline-block bg-white border-2 border-seviDark text-seviDark hover:bg-seviDark hover:text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300">
+                ¿Quieres Colaborar?
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. Intro -->
+    <section class="py-20 px-6 md:px-12 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-seviRed mb-6">COLABORA CON SEVIAI</h2>
+            <h3 class="text-xl font-semibold text-seviDark mb-6">Formación y asesoría en Inteligencia Artificial con rostro humano</h3>
+            <p class="text-lg text-gray-600 mb-6">
+                En SeviAI ayudamos a empresas reales a integrar la Inteligencia Artificial con sentido común. Nuestra misión es clara: <strong>hacer accesible la IA a PYMEs, autónomos y profesionales no técnicos</strong>, sin tecnicismos, sin humo y con un enfoque humano.
+            </p>
+            <blockquote class="border-l-4 border-seviRed pl-4 italic text-gray-700 text-lg">
+                "La IA ya no es el futuro. Es ahora. Y aquí estamos para ayudarte a integrarla sin agobios, con sentido común... y una pizca de chispa."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- 3. Por qué colaborar -->
+    <section class="py-20 px-6 md:px-12 bg-seviGray">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-seviRed mb-12 text-center">¿POR QUÉ COLABORAR CON SEVIAI?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-xl text-gray-700 mb-6 leading-relaxed">
+                        Porque <strong>no solo formamos, acompañamos</strong>. Porque <strong>no vendemos promesas vacías</strong>, sino resultados reales.
+                    </p>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        Y porque, como consultora, agencia o profesional con una red activa, <strong>tú también puedes ofrecer más valor a tus clientes y diferenciarte</strong>.
+                    </p>
+                </div>
+                <div class="bg-seviRed text-white p-10 rounded-2xl shadow-xl text-center flex flex-col justify-center items-center h-full">
+                    <h3 class="text-3xl font-bold mb-2">SeviAI</h3>
+                    <p class="text-xl">asesoría y formación</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center border-t-2 border-gray-300 pt-8">
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Colaborar con SeviAI significa formar parte de una <strong>red de confianza</strong> donde todos ganan. Apostamos por <strong>alianzas reales, complementarias y sostenibles</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Tipo de partners -->
+    <section class="py-20 px-6 md:px-12 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-seviRed mb-12 text-center">¿QUÉ TIPO DE PARTNERS BUSCAMOS?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="border border-gray-200 rounded-2xl p-8 card-hover bg-white">
+                    <div class="text-seviRed text-3xl mb-4"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3 class="text-xl font-bold text-seviDark mb-3">CONSULTORAS Y EMPRESAS TECNOLÓGICAS</h3>
+                    <p class="text-gray-600">Con foco en digitalización, automatización o ciberseguridad. <em>(Ejemplo: empresas GRC o especializadas en ciberataques, con servicios complementarios a la IA.)</em></p>
+                </div>
+                <!-- Card 2 -->
+                <div class="border border-gray-200 rounded-2xl p-8 card-hover bg-white">
+                    <div class="text-seviRed text-3xl mb-4"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3 class="text-xl font-bold text-seviDark mb-3">AGENCIAS DE MARKETING Y DISEÑO WEB</h3>
+                    <p class="text-gray-600">Que deseen integrar soluciones de IA o formar a sus clientes en herramientas inteligentes. <em>(Ejemplo: colaboración activa con Haz Marca, agencia responsable del desarrollo web de SeviAI.)</em></p>
+                </div>
+                <!-- Card 3 -->
+                <div class="border border-gray-200 rounded-2xl p-8 card-hover bg-white">
+                    <div class="text-seviRed text-3xl mb-4"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3 class="text-xl font-bold text-seviDark mb-3">EMPRESAS DE CUMPLIMIENTO NORMATIVO O LEGAL TECH</h3>
+                    <p class="text-gray-600">Especialmente en materia de protección de datos y regulación de IA. <em>(Ejemplo: colaboración con ForLOPD, especialistas en cumplimiento RGPD.)</em></p>
+                </div>
+                <!-- Card 4 -->
+                <div class="border border-gray-200 rounded-2xl p-8 card-hover bg-white">
+                    <div class="text-seviRed text-3xl mb-4"><i class="fa-solid fa-briefcase"></i></div>
+                    <h3 class="text-xl font-bold text-seviDark mb-3">FIRMAS O DESPACHOS QUE OFREZCAN SERVICIOS A PYMES</h3>
+                    <p class="text-gray-600">Y quieran incluir soluciones de IA o formación bonificable entre su propuesta de valor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Qué ofrecemos -->
+    <section class="py-20 px-6 md:px-12 bg-seviLight">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-seviRed mb-12 text-center">¿QUÉ OFRECEMOS A NUESTROS PARTNERS?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="w-10 h-10 bg-seviDark text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4">1</div>
+                    <h3 class="font-bold text-lg mb-3">SINERGIA REAL Y COMPLEMENTARIEDAD</h3>
+                    <p class="text-gray-600 text-sm">Trabajamos contigo, no para ti. Sumamos tu especialidad a nuestros proyectos cuando aporte valor.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="w-10 h-10 bg-seviDark text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4">2</div>
+                    <h3 class="font-bold text-lg mb-3">VISIBILIDAD COMPARTIDA</h3>
+                    <p class="text-gray-600 text-sm">Tu logo y enlace pueden aparecer en nuestras comunicaciones, materiales o web como partner estratégico.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="w-10 h-10 bg-seviDark text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4">3</div>
+                    <h3 class="font-bold text-lg mb-3">REFERENCIAS CRUZADAS</h3>
+                    <p class="text-gray-600 text-sm">Recomendamos tus servicios en los proyectos donde tu especialidad sea clave (ciberseguridad, diseño, etc.).</p>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="w-10 h-10 bg-seviDark text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4">4</div>
+                    <h3 class="font-bold text-lg mb-3">FORMACIONES BONIFICABLES</h3>
+                    <p class="text-gray-600 text-sm">Todas nuestras formaciones para empresas pueden financiarse, y tú puedes ofrecerlas a tus clientes como valor añadido.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="w-10 h-10 bg-seviDark text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4">5</div>
+                    <h3 class="font-bold text-lg mb-3">CONDICIONES PREFERENTES</h3>
+                    <p class="text-gray-600 text-sm">Partners seleccionados disfrutan de condiciones ventajosas en servicios internos y sesiones de diagnóstico IA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Qué gana tu cliente -->
+    <section class="py-20 px-6 md:px-12 bg-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-seviRed mb-8">QUÉ GANA TU CLIENTE</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                Cuando colaboras con SeviAI, tus clientes no solo acceden a herramientas de inteligencia artificial, sino también a una forma distinta de entender la tecnología: <strong>cercana, práctica y segura</strong>.
+            </p>
+            <p class="text-lg text-gray-700 mb-6">
+                Gracias a nuestras formaciones bonificables y soluciones personalizadas, tú puedes <strong>ampliar tu oferta</strong> sin necesidad de aumentar estructura o asumir nuevas áreas técnicas.
+            </p>
+            <p class="text-lg text-gray-700 mb-8">
+                En cada colaboración, buscamos que ambas partes brillen: tú como referente de confianza, y tu cliente como empresa que innova con sentido común.
+            </p>
+            <p class="text-xl font-bold text-seviRed">
+                Colaborar con SeviAI te permite ofrecer más valor sin complicaciones.
+            </p>
+        </div>
+    </section>
+
+    <!-- 7. Cómo trabajamos -->
+    <section class="py-20 px-6 md:px-12 bg-seviDark text-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-seviRed mb-12 text-center">CÓMO TRABAJAMOS</h2>
+            
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-seviRed before:to-transparent">
+                
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-seviDark bg-seviRed text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">01</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-gray-700 bg-gray-800">
+                        <h3 class="font-bold text-xl mb-2 text-white">HABLAMOS Y DETECTAMOS SINERGIAS</h3>
+                        <p class="text-gray-300">No buscamos colaboraciones masivas, sino relaciones que tengan sentido y encaje real.</p>
+                    </div>
+                </div>
+                
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-seviDark bg-seviRed text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">02</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-gray-700 bg-gray-800">
+                        <h3 class="font-bold text-xl mb-2 text-white">DEFINIMOS QUÉ APORTA CADA PARTE</h3>
+                        <p class="text-gray-300">Tú decides si derivar clientes, crear formaciones conjuntas o integrar tu servicio dentro de un proyecto IA.</p>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-seviDark bg-seviRed text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">03</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-gray-700 bg-gray-800">
+                        <h3 class="font-bold text-xl mb-2 text-white">FORMALIZAMOS LA COLABORACIÓN</h3>
+                        <p class="text-gray-300">Incluimos tu marca en nuestro ecosistema de partners y establecemos beneficios y protocolos claros.</p>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-seviDark bg-seviRed text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">04</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-gray-700 bg-gray-800">
+                        <h3 class="font-bold text-xl mb-2 text-white">CREAMOS JUNTOS IMPACTO REAL</h3>
+                        <p class="text-gray-300">Colaboramos en acciones concretas: charlas, eventos, formaciones o implantaciones de IA seguras y humanas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Partners Actuales -->
+    <section class="py-20 px-6 md:px-12 bg-seviLight">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-seviRed mb-12 text-center">PARTNERS ACTUALES</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- FORLOPD -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col">
+                    <div class="h-20 mb-6 flex items-center justify-start">
+                        <img src="assets/images/Copia-de-logo-con-fondo.jpg" alt="FORLOPD" class="max-h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-seviDark mb-3">FORLOPD</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Firma experta en protección de datos y cumplimiento normativo digital. Colaboran con SeviAI asegurando que todas las soluciones de inteligencia artificial se despliegan cumpliendo RGPD.</p>
+                    <p class="text-seviRed font-medium text-sm italic">Ofrecen un diagnóstico gratuito RGPD a los clientes de SeviAI.</p>
+                </div>
+
+                <!-- FORMIND -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col">
+                    <div class="h-20 mb-6 flex items-center justify-start">
+                        <img src="assets/images/SVG---Formind-Logo---Azul-Oscuro-y-Degradado.svg" alt="Formind" class="max-h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-seviDark mb-3">FORMIND IBERIA & LATAM</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Consultora internacional en ciberseguridad y compliance técnico. Trabajamos conjuntamente para desarrollar soluciones de IA seguras y éticas.</p>
+                    <p class="text-seviRed font-medium text-sm italic">Ayudan a las empresas clientes de SeviAI a proteger datos y reducir riesgos.</p>
+                </div>
+
+                <!-- HELVETIA -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col">
+                    <div class="h-20 mb-6 flex items-center justify-start">
+                        <!-- Placeholder until real logo is downloaded -->
+                        <div class="text-3xl text-seviRed font-bold flex items-center gap-2"><i class="fa-solid fa-shield-halved"></i> Helvetia</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-seviDark mb-3">HELVETIA-SEGUROS DE CIBERRIESGO</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Aseguradora líder que protege a empresas frente a ataques informáticos. Ofreciendo coberturas especializadas adaptadas a PYMEs que comienzan a usar IA.</p>
+                    <p class="text-seviRed font-medium text-sm italic">Los clientes de SeviAI acceden a condiciones preferentes en pólizas de ciberriesgo.</p>
+                </div>
+
+                <!-- NEOTYPE -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col">
+                    <div class="h-20 mb-6 flex items-center justify-start">
+                        <div class="text-3xl text-seviDark font-bold flex items-center gap-2">NEOTYPE</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-seviDark mb-3">NEOTYPE</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Partner tecnológico especializado en automatización de contenidos y posicionamiento SEO con IA. Optimizamos webs integrando IA de forma responsable.</p>
+                    <p class="text-seviRed font-medium text-sm italic">Clientes de SeviAI acceden a un 50% de descuento en sus planes con el código NEOMCF50.</p>
+                </div>
+
+                <!-- HAZ MARCA -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col">
+                    <div class="h-20 mb-6 flex items-center justify-start">
+                        <img src="assets/images/cropped-hazmarcalogo-1.webp" alt="Haz Marca" class="max-h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-seviDark mb-3">HAZ MARCA</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Agencia de marketing y diseño responsable de la web de SeviAI. Colaboramos en la integración de IA en estrategias de visibilidad digital.</p>
+                    <p class="text-seviRed font-medium text-sm italic">Unimos creatividad, tecnología y estrategia para potenciar marcas.</p>
+                </div>
+
+                <!-- BUFETE DE ABOGADOS -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-dashed border-gray-300 flex flex-col">
+                    <div class="h-20 mb-6 flex items-center justify-start text-gray-400 text-4xl">
+                        <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-seviDark mb-3">BUFETE DE ABOGADOS (Próximamente)</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Partner legal especializado. Reforzando nuestro compromiso con la seguridad jurídica y la correcta aplicación de normativas en proyectos de IA.</p>
+                    <p class="text-seviRed font-medium text-sm italic">Alianza en proceso de confirmación.</p>
+                </div>
+
+                <!-- PEPE / SAAS GOBERNANZA -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-dashed border-gray-300 flex flex-col lg:col-start-2">
+                    <div class="h-20 mb-6 flex items-center justify-start text-gray-400 text-4xl">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-seviDark mb-3">SaaS GOBERNANZA (Próximamente)</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Partner de desarrollo tecnológico responsable de evolucionar y escalar la aplicación de gobernanza IA diseñada por SeviAI, convirtiéndola en un SaaS robusto y empresarial.</p>
+                    <p class="text-seviRed font-medium text-sm italic">Alianza estratégica en desarrollo.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Sentido colaborar conmigo -->
+    <section class="py-20 px-6 md:px-12 bg-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-seviRed mb-8">¿POR QUÉ TIENE SENTIDO COLABORAR CONMIGO?</h2>
+            <p class="text-xl text-gray-700 mb-6 leading-relaxed">
+                Porque <strong>SeviAI no compite, complementa.</strong> Yo me encargo de la parte de inteligencia artificial aplicada, automatizaciones, formación y asesoría, mientras tú puedes cubrir ámbitos donde la IA no llega: ciberseguridad, seguros, diseño, marketing o legalidad.
+            </p>
+            <p class="text-xl text-gray-700 mb-10">
+                Cada colaboración es un puente: tú aportas tu experiencia y yo la IA que la potencia.
+            </p>
+            <blockquote class="text-2xl font-semibold text-seviDark italic max-w-3xl mx-auto">
+                "La inteligencia artificial no sustituye a las personas. Las une para trabajar mejor."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- 10 & 11. Referencias (Prensa y Testimonios) -->
+    <section class="py-20 px-6 md:px-12 bg-seviGray">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-seviRed mb-12 text-center">REFERENCIAS Y RECONOCIMIENTOS</h2>
+            
+            <!-- Prensa -->
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                    <h3 class="font-bold text-lg mb-2">SEVILLA Y MÁS</h3>
+                    <p class="text-gray-600 italic">"La inteligencia artificial, una ayuda real para las empresas"</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                    <h3 class="font-bold text-lg mb-2">SEVILLA BUENAS NOTICIAS</h3>
+                    <p class="text-gray-600 italic">"La IA, un recurso útil que debe ser bien aplicado"</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                    <h3 class="font-bold text-lg mb-2">AION SUR</h3>
+                    <p class="text-gray-600 italic">"Ayudar a las PYMES a crecer con la IA es una gran satisfacción"</p>
+                </div>
+            </div>
+
+            <!-- Testimonios -->
+            <div class="bg-white rounded-2xl p-10 shadow-lg mb-12 text-center">
+                <h3 class="text-2xl font-bold text-seviDark mb-6">Lo que dicen quienes colaboran con nosotros</h3>
+                <blockquote class="text-xl text-gray-600 italic mb-6">
+                    "Rocío es una persona extraordinariamente competente para la impartición de sus cursos, al conocimiento profundo y espiritual investigador sobre las materias didácticas, se le añade la destreza en su impartición y sobre todo, la actitud hacia sus participantes, los feedbacks que recibe de los mismos corroboran su profesionalidad"
+                </blockquote>
+                <p class="font-bold text-seviRed">— Sergio Borrás, CEO Kairos Inserta</p>
+            </div>
+            
+            <!-- Google Reviews Placeholder -->
+            <div class="text-center">
+                <a href="#" class="inline-block bg-white border-2 border-seviRed text-seviRed hover:bg-seviRed hover:text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300">
+                    <i class="fa-brands fa-google mr-2"></i> Ver Reseñas en Google
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. Contacto y Typeform -->
+    <section id="contacto-form" class="py-20 px-6 md:px-12 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-seviRed mb-12 text-center">¿CREAMOS ALGO JUNTOS?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                
+                <!-- Info Contacto -->
+                <div>
+                    <p class="text-lg text-gray-700 mb-8">
+                        Si crees que podemos generar sinergias, tomemos un café o una videollamada. Las mejores colaboraciones nacen conversando.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center gap-4 text-gray-700">
+                            <div class="w-10 h-10 bg-seviLight rounded-full flex items-center justify-center text-seviRed"><i class="fa-solid fa-envelope"></i></div>
+                            <strong>Email:</strong> rocio@seviai.es
+                        </div>
+                        <div class="flex items-center gap-4 text-gray-700">
+                            <div class="w-10 h-10 bg-seviLight rounded-full flex items-center justify-center text-seviRed"><i class="fa-brands fa-whatsapp"></i></div>
+                            <strong>Teléfono / WhatsApp:</strong> +34 640 31 60 34
+                        </div>
+                        <div class="flex items-center gap-4 text-gray-700">
+                            <div class="w-10 h-10 bg-seviLight rounded-full flex items-center justify-center text-seviRed"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <strong>LinkedIn:</strong> Rocío Cano Fernández-Piedra
+                        </div>
+                    </div>
+                    
+                    <p class="text-lg font-medium text-seviDark italic">
+                        Porque la tecnología puede transformar negocios… pero las personas son las que transforman el mundo.
+                    </p>
+                </div>
+
+                <!-- Typeform -->
+                <div class="bg-white p-2 rounded-2xl shadow-xl border border-gray-100 overflow-hidden h-[600px]">
+                    <div data-tf-live="IkU51Q3T"></div>
+                    <script src="//embed.typeform.com/next/embed.js"></script>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-seviDark text-gray-400 py-10 text-center text-sm">
+        <div class="max-w-4xl mx-auto px-6">
+            <p>&copy; 2026 SeviAI. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
